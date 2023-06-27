@@ -11,8 +11,10 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { heartOutline, heartSharp } from 'ionicons/icons';
+import { heartOutline, heartSharp, listCircleOutline, flowerOutline, sparklesOutline, heartDislikeCircleOutline } from 'ionicons/icons';
 import './Menu.css';
+
+
 
 interface AppPage {
   url: string;
@@ -27,6 +29,27 @@ const appPages: AppPage[] = [
     url: '/pages/List',
     iosIcon: heartOutline,
     mdIcon: heartSharp
+  },
+
+  {
+    title: 'Formulario para crear un nuevo producto',
+    url: '/pages/CreateProduct',
+    iosIcon: flowerOutline,
+    mdIcon: flowerOutline
+  },
+
+  {
+    title: 'Formulario para editar un producto',
+    url: '/pages/EditProduct',
+    iosIcon: sparklesOutline ,
+    mdIcon: sparklesOutline 
+  },
+  
+  {
+    title: 'Formulario para eliminar un producto',
+    url: '/pages/DeleteProduct',
+    iosIcon: heartDislikeCircleOutline,
+    mdIcon: heartDislikeCircleOutline
   }
 ];
 
@@ -37,8 +60,8 @@ const Menu: React.FC = () => {
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Ionic 2023</IonListHeader>
-          <IonNote>Ionic Project</IonNote>
+          <IonListHeader>Laboratorio 4</IonListHeader>
+          <IonNote>Raquel Arias Murillo C00708</IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
