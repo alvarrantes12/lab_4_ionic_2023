@@ -37,17 +37,17 @@ const List: React.FC = () => {
       <IonContent>
         { data?.map((product: any) => {
           return(
-            <IonCard className="Ion-Card">
+            <IonCard>
               <IonCardHeader>
-                <IonCardTitle className="Ion-Card-Title">Id: {product.id}</IonCardTitle>
-                <IonCardTitle className="Ion-Card-Title">Nombre: {product.name}</IonCardTitle>
-                <IonCardSubtitle className="Ion-Card-SubTitle">Precio: {product.price}</IonCardSubtitle>
+                <IonCardTitle >Id: {product.id}</IonCardTitle>
+                <IonCardTitle >Nombre: {product.name}</IonCardTitle>
+                <IonCardSubtitle >Precio: {product.price}</IonCardSubtitle>
               </IonCardHeader>
             </IonCard>
           )
         })}
 
-        <IonButton className='Ion-Button' expand='block' color='danger' onClick={handleRedirect}>
+        <IonButton expand='block' color='danger' onClick={handleRedirect}>
           Agregar
         </IonButton>
       </IonContent>
