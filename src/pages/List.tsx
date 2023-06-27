@@ -27,7 +27,7 @@ const List: React.FC = () => {
         <IonHeader>
           <IonToolbar>
             <IonTitle>
-              Ejemplo Ionic #1
+              Lista de Productos
             </IonTitle>
           </IonToolbar>
         </IonHeader>
