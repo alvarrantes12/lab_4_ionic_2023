@@ -22,6 +22,9 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Create from './pages/form/FormCreate';
+import Delete from './pages/form/FormDelete';
+import Edit from './pages/form/FormEdit';
 
 setupIonicReact();
 
@@ -37,6 +40,15 @@ const App: React.FC = () => {
             </Route>
             <Route path="/pages/List" exact={true}>
               <List />
+            </Route>
+            <Route path="/pages/form/FormCreate" exact={true}>
+              <Create />
+            </Route>
+            <Route path="/pages/form/FormDelete" exact={true}>
+              <Delete />
+            </Route>
+            <Route path="/pages/form/FormEdit" exact={true}>
+              <Edit />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
