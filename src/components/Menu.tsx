@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { heartOutline, heartSharp } from 'ionicons/icons';
+import { heartOutline, heartSharp, listCircleOutline } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -23,11 +23,31 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Lista Principal',
+    title: 'Lista de productos',
     url: '/pages/List',
     iosIcon: heartOutline,
     mdIcon: heartSharp
+  },
+  {
+    title: 'Crear',
+    url: '/pages/FormPost',
+    iosIcon: listCircleOutline,
+    mdIcon: listCircleOutline
+  },
+  {
+    title: 'Editar',
+    url: '/pages/FormPut',
+    iosIcon: listCircleOutline,
+    mdIcon: listCircleOutline
+  },
+  {
+    title: 'Eliminar',
+    url: '/pages/FormDelete',
+    iosIcon: listCircleOutline,
+    mdIcon: listCircleOutline
   }
+  
+
 ];
 
 const Menu: React.FC = () => {
@@ -37,8 +57,8 @@ const Menu: React.FC = () => {
     <IonMenu contentId="main" type="overlay">
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Ionic 2023</IonListHeader>
-          <IonNote>Ionic Project</IonNote>
+          <IonListHeader>Laboratorio #4</IonListHeader>
+          <IonNote>Jose Isaac Lazo</IonNote>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>
