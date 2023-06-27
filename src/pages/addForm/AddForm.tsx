@@ -30,7 +30,7 @@ const Add: React.FC = () => {
             <IonContent>
                 <h1>{message}</h1>
                 <form onSubmit={handleSubmit} style={{marginTop: '50px', marginLeft: '20px', marginRight: '20px'}}>
-                    <IonItem style={{marginBottom: '20px'}}>
+                    <IonItem>
                         <IonLabel position='floating'>Nombre</IonLabel>
                         <IonInput 
                             value ={name} 
@@ -38,7 +38,7 @@ const Add: React.FC = () => {
                             required>
                         </IonInput>
                     </IonItem>
-                    <IonItem style={{marginBottom: '20px'}}>
+                    <IonItem style={{marginBottom: '20px',marginTop: '10px'}}>
                         <IonLabel position='floating'>Precio</IonLabel>
                         <IonInput 
                             value ={price} 

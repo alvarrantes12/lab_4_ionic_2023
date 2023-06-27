@@ -17,6 +17,7 @@ import ApiMethods from '../commons/ApiMethods';
 import { environment } from '../environments/environment.dev';
 
 const List: React.FC = () => {
+  
   const {data} = ApiMethods(`${environment.apiEndpoint}/products`)
 
   if (!data) {
@@ -38,7 +39,7 @@ const List: React.FC = () => {
               <IonCard className='Ion_Card'> 
                 <IonCardHeader>
                   <IonCardTitle className='Ion_Card_Title'> Nombre: {product.name}</IonCardTitle>
-                  <IonCardSubtitle className='Ion_Card_SubTitle'>Price: {product.price}</IonCardSubtitle>
+                  <IonCardSubtitle className='Ion_Card_SubTitle'>Precio: {product.price}</IonCardSubtitle>
                   <IonCardSubtitle className='Ion_Card_SubTitle'>Id: {product.id}</IonCardSubtitle>
                 </IonCardHeader>
 
