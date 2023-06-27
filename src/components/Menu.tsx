@@ -27,6 +27,24 @@ const appPages: AppPage[] = [
     url: '/pages/List',
     iosIcon: heartOutline,
     mdIcon: heartSharp
+  },
+  {
+    title: ' Editar productos',
+    url: '/pages/productos/FormEdit',
+    iosIcon: heartOutline,
+    mdIcon: heartOutline
+  },
+  {
+    title: ' crear productos',
+    url: '/pages/productos/FormCreate',
+    iosIcon: heartOutline,
+    mdIcon: heartOutline
+  },
+  {
+    title: ' borrar productos',
+    url: '/pages/productos/FormDelete',
+    iosIcon: heartOutline,
+    mdIcon: heartOutline
   }
 ];
 

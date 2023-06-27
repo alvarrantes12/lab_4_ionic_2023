@@ -1,0 +1,22 @@
+.ion-card {
+    background-color: lightblue;
+  }
+  
+  .ion-card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: darkblue;
+  }
+  
+  .ion-card-subtitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: darkblue;
+  }
+  
+  .ion-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: darkblue;
+  }
+  
