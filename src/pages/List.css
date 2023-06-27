@@ -1,0 +1,22 @@
+ion-card {
+    background-color: rgb(37,92,105);
+    padding: 16px;
+}
+
+ion-card-title {
+    color: rgb(1,43,53);
+    text-align: center;
+}
+
+ion-card-subtitle {
+    color: rgb(15, 67, 79);
+    text-align: right;
+}
+
+ion-card-content {
+    color: rgb(68, 120, 132);
+}
+
+ion-button {
+    color: black;
+}
