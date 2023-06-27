@@ -3,6 +3,9 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import List from './pages/List';
+import Edit from './pages/Edit/form';
+import Create from './pages/Create/form';
+import Delete from './pages/Delete/form';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -27,21 +30,30 @@ setupIonicReact();
 
 const App: React.FC = () => {
   return (
-    <IonApp>
-      <IonReactRouter>
-        <IonSplitPane contentId="main">
-          <Menu />
-          <IonRouterOutlet id="main">
-            <Route path="/" exact={true}>
-              <Redirect to="/pages/List" />
-            </Route>
-            <Route path="/pages/List" exact={true}>
-              <List />
-            </Route>
-          </IonRouterOutlet>
-        </IonSplitPane>
-      </IonReactRouter>
-    </IonApp>
+      <IonApp>
+        <IonReactRouter>
+          <IonSplitPane contentId="main">
+            <Menu />
+            <IonRouterOutlet id="main">
+              <Route path="/" exact={true}>
+                <Redirect to="/pages/List" />
+              </Route>
+              <Route path="/pages/List" exact={true}>
+                <List />
+              </Route>
+              <Route path="/pages/Edit" exact={true}>
+                <Edit />
+              </Route>
+              <Route path="/pages/Create" exact={true}>
+                <Create />
+              </Route>
+              <Route path="/pages/Delete" exact={true}>
+                <Delete />
+              </Route>
+            </IonRouterOutlet>
+          </IonSplitPane>
+        </IonReactRouter>
+      </IonApp>
   );
 };
 
