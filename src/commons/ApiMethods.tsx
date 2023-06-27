@@ -23,7 +23,7 @@ import { useEffect, useState } from 'react';
 
     }, [url])
 
-    const createMethod = (name: any, price: any) => {
+    const createMethod = (name: any, price: any, supermarketId: any) => {
         const config = {
             headers: {
                 "Accept": 'application/json',
@@ -32,7 +32,7 @@ import { useEffect, useState } from 'react';
         }
 
         setLoading(true);
-        axios.post(url, {name: name, price: price}, config)
+        axios.post(url, {name: name, price: price, supermarket_id: supermarketId}, config)
             .then((response) => {setData(response.data) })
             .catch((err) => {setError(err) })
             .finally(() => {setLoading(false) })

@@ -40,6 +40,7 @@ const List: React.FC = () => {
                 <IonCardHeader>
                   <IonCardTitle className='Ion__Card__Title'>Nombre: {product.name}</IonCardTitle>
                   <IonCardSubtitle className='Ion__Card__Subtitle'>Precio: {product.price}</IonCardSubtitle>
+                  <IonCardSubtitle className='Ion__Card__Subtitle'>Id: {product.id}</IonCardSubtitle>
                 </IonCardHeader>
                 <IonCardContent className='Ion__Card__Content'>Supermercado: {product.supermarket.first_name}</IonCardContent>
               </IonCard>
