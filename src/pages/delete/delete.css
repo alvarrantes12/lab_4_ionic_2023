@@ -1,0 +1,18 @@
+.Delete__Container {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.Delete__Title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Delete__Input {
+    margin-bottom: 20px;
+}
+
+.Delete__Button {
+    margin-top: 20px;
+}

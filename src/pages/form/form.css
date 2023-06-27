@@ -1,0 +1,18 @@
+.Form__Container {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.Form__Title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Form__Input {
+    margin-bottom: 20px;
+}
+
+.Form__Button {
+    margin-top: 20px;
+}
