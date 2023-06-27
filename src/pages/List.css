@@ -1,0 +1,18 @@
+.Ion__Card{
+    background-color: #DEDEDE;
+}
+
+.Ion__Card__Title {
+    color: #3f3f3f;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Ion__Card__Subtitle {
+    color: #335e46;
+    text-align: right;
+}
+
+.Ion__Card__Content {
+    color: #475b9c;
+}
