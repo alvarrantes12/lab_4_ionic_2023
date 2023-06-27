@@ -1,0 +1,38 @@
+.Ion__Card {
+    background-color: rgb(210, 210, 131);
+
+}
+
+.Ion__Card__Title {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.Ion__Card__SubTitle {
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-weight: bold;
+}
+
+.Ion__Loading {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 320px;
+}
+
+.Ion__Card__ID{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}

@@ -2,7 +2,10 @@ import { IonApp, IonRouterOutlet, IonSplitPane, setupIonicReact } from '@ionic/r
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
-import List from './pages/List';
+import List from './pages/ListProducts/List';
+import FormCreate from './pages/CreateProducts/FormCreate';
+import FormEdit from './pages/EditProducts/FormEdit';
+import FormDelete from './pages/DeleteProducts/FormDelete';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -33,10 +36,19 @@ const App: React.FC = () => {
           <Menu />
           <IonRouterOutlet id="main">
             <Route path="/" exact={true}>
-              <Redirect to="/pages/List" />
+              <Redirect to="/pages/ListProducts/List" />
             </Route>
-            <Route path="/pages/List" exact={true}>
+            <Route path="/pages/ListProducts/List" exact={true}>
               <List />
+            </Route>
+            <Route path="/pages/CreateProducts/FormCreate" exact={true}>
+              <FormCreate />
+            </Route>
+            <Route path="/pages/EditProducts/FormEdit" exact={true}>
+              <FormEdit />
+            </Route>
+            <Route path="/pages/DeleteProducts/FormDelete" exact={true}>
+              <FormDelete />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
