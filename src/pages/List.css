@@ -1,0 +1,18 @@
+.Ion-Card {
+    background-color: rgb(71, 65, 65);
+}
+
+.Ion-Card-Title {
+    color: goldenrod;
+    text-align: center;
+}
+
+.Ion-Card-SubTitle-ID{
+    color: turquoise;
+    text-align: center;
+}
+
+.Ion-Card-SubTitle{
+    color: greenyellow;
+    text-align: center;
+}
