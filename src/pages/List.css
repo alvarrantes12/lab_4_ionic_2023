@@ -1,0 +1,20 @@
+.ion-card {
+    background-color: lightgrey;
+}
+
+.ion-card-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: teal;
+}
+
+.ion-card-subtitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: teal;
+}
+
+.ion-button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
