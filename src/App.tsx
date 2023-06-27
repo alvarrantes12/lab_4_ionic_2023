@@ -3,6 +3,9 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import List from './pages/List';
+import Form from './pages/form/form';
+import Create from './pages/create/create';
+import Delete from './pages/delete/delete';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -38,6 +41,15 @@ const App: React.FC = () => {
             <Route path="/pages/List" exact={true}>
               <List />
             </Route>
+            <Route path="/pages/form" exact={true}>
+              <Form/>
+            </Route>
+            <Route path="/pages/create" exact={true}>
+              <Create/>
+            </Route>
+            <Route path="/pages/delete" exact={true}>
+              <Delete/>
+            </Route>
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>
@@ -46,3 +58,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
