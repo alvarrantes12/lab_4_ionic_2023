@@ -1,0 +1,22 @@
+.Ion__Card {
+    background-color: #201f1f;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  
+  .Ion__Card__Title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .Ion__Card__SubTitle {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  
+  .Ion_Button {
+    margin-top: 16px;
+  }
+  

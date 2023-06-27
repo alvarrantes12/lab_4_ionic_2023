@@ -11,7 +11,7 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { heartOutline, heartSharp } from 'ionicons/icons';
+import {  listCircleOutline, closeCircleOutline, addOutline, createOutline  } from 'ionicons/icons';
 import './Menu.css';
 
 interface AppPage {
@@ -23,11 +23,30 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Lista Principal',
+    title: 'Pagina Principal',
     url: '/pages/List',
-    iosIcon: heartOutline,
-    mdIcon: heartSharp
+    iosIcon: listCircleOutline,
+    mdIcon: listCircleOutline
+  }, 
+  {
+    title: 'Crear',
+    url: '/pages/New',
+    iosIcon: addOutline,
+    mdIcon: addOutline
+  },
+  {
+    title: 'Editar',
+    url: '/pages/Edit',
+    iosIcon: createOutline,
+    mdIcon: createOutline
+  },
+  {
+    title: 'Eliminar',
+    url: '/pages/Delete',
+    iosIcon: closeCircleOutline,
+    mdIcon: closeCircleOutline
   }
+
 ];
 
 const Menu: React.FC = () => {
